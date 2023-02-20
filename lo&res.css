@@ -1,0 +1,365 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: .2s linear;
+}
+html{
+  overflow-x: hidden;
+  font-size: 55%;
+  scroll-behavior: smooth;
+  scroll-margin-top: 6rem;
+    background-color: #fff;
+}
+
+.upperline span{
+ color: #ef3636;
+ font-weight: bold;
+ font-size: 1.9rem;
+ } 
+.upperline{
+background-color: #088178;
+height: 40px;
+width: 100%;
+padding: 10px 3px;
+}
+.upperline h3{
+color: white;
+font-size: 1.7rem;
+text-align: center;
+font-family:  sans-serif;
+font-weight: 700;
+
+}
+
+header{
+
+ position: fixed;
+    left:0; right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:1rem 5%;
+    background:#fff;
+     box-shadow:0 5px 15px rgba(0, 0, 0, 0.3);
+}
+.bg-pic{
+    background-image: url('pic/b1.jpg');
+background-repeat: no-repeat;
+background-size: cover;
+width: 100%;
+height: 400px;
+}
+
+header .logo{
+font-weight: bold;
+font-size: 3rem;
+color:black;
+
+}
+
+header .logo img{
+  height: 25px;
+}
+header .logo span{
+  color: #088178;
+  font-size: 3rem;
+}
+
+header .navbar a{
+ font-weight: bold;
+color: black;
+font-size: 2.2rem;
+margin: 2rem;
+
+}
+
+header .icon  a{
+  height: 4.5rem;
+    width: 4.5rem;
+    line-height: 4.5rem;
+    border-radius: .5rem;
+    background: #eee;
+    color:black;
+    font-size: 2.5rem;
+    margin-left: .3rem;
+    cursor: pointer;
+    text-align: center;
+
+ 
+}
+header .active{
+    border-bottom: 1px solid #088187;
+    
+}
+header #toggle{
+  display: none;
+}
+
+header .fa-bars {
+  font-size: 3rem;
+  color: #333;
+  border-radius: .5rem;
+  padding: 1rem 1.5rem;
+  cursor: pointer;
+  border:.2rem solid rgba(0, 0, 0, .3) ;
+    display: none;
+}
+header .icon a:hover{
+transition: .4s;
+color: #088178;
+font-weight: bold;
+}
+
+  .sticky{
+  
+  position: fixed;
+  top: 0;
+  width: 100%;
+  
+}
+ header .navbar a:hover{
+transition: .1s;
+color: #088178;
+border-bottom:2px solid #088178;
+font-weight: bold;
+}
+
+.col  img{
+  height: 20px;
+}
+footer{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+height: 350px;
+background-color: #f4f4f4;
+}
+footer .col{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+margin-bottom: 20px;
+margin-top: 28px;
+
+}
+footer h2{
+    margin-bottom: 30px;
+    font-size: 19px;
+}
+
+footer h2 span{
+color: #088178;
+}
+footer h4{
+    font-size: 15px;
+    padding: 20px;
+    text-align: center;
+}
+
+footer p{
+    font-size: 13px;
+   margin: 0 0 8px 0;
+   color: #666;
+}
+
+footer a{
+    color: #666;
+    font-size: 13px;
+   margin: 0 0 8px 0;
+   text-decoration: none;
+   margin-bottom: 10px;
+   
+margin-left: 20px;
+}
+
+footer .Follow{
+    margin-top: 20px;
+   
+    font-size: 17px;
+}
+
+
+footer .Follow .links{
+    color: #465b52;
+    padding-right: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-left: 25px;
+}
+
+footer .gate img{
+height: 30px;
+}
+footer .gate p{
+margin-top: 15px;
+}
+footer .install .row img{
+    border: 1px solid #088178;
+    border-radius: 4px;
+    height: 40px;
+    width: 40%;
+    margin: 5px;
+
+}
+
+footer .install img{
+    margin: 10px 0 15px 0;
+}
+footer .links:hover{
+color: #088178;
+}
+footer .copy-right{
+    width: 100%;
+    text-align: center;
+    color: #666;
+}
+footer  a:hover{
+color: #088178;
+}
+
+.form-container{
+   min-height: 100vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding:20px;
+   padding-bottom: 70px;
+  }
+
+.form-container form{
+   width: 500px;
+   border-radius: 5px;
+  
+   padding:25px;
+   text-align: center;
+   background-color: #088178;
+   margin-top: 100px;
+   box-shadow: 1px 2px 3px 2px #222;
+}
+
+.form-container form h3{
+   font-size: 25px;
+   margin-bottom: 10px;
+   text-transform: uppercase;
+   color:black;
+}
+
+.form-container form .box{
+   width: 75%;
+   border-radius: 5px;
+   border:  1px solid #222;
+   padding:10px 7px;
+   font-size: 13px;
+   margin:10px 0;
+   background-color:#f4f4f4;
+}
+.form-container form p{
+   margin-top: 20px;
+   font-size: 16px;
+   color:#000;
+}
+.form-container form p a{
+   color:darkred;
+   font-size: 18px;
+}
+
+.form-container form p a:hover{
+   text-decoration: underline;
+ }
+
+ 
+ .btn{
+    margin-top: 2rem;
+    display: inline-block;
+    padding:.6rem 4rem;
+    font-size: 1.7rem;
+    border-radius: .4rem;
+    border:.2rem solid #f4f4f4;
+    color:#f4f4f4;
+    cursor: pointer;
+    background: none;
+    margin-right: 30px;
+}
+
+.btn:hover{
+    background: #222;
+    color:#fff;
+}
+/*media quries*/
+@media(max-width: 750px) {
+.section-p1 {
+    padding: 40px 0px;
+}
+header{
+  padding: 1rem;
+}
+
+h3{
+  font-size: 1.4rem;
+padding: 1rem;
+  margin-right: 80px;
+}
+}
+
+
+@media(max-width:779px) {
+
+
+header .fa-bars{
+display: block;
+}
+header .navbar{
+  position: absolute;
+  top: 90%;left: 0;right: 0;
+  background-color: #eee;
+  border-top: .1rem solid rgba(0, 0, 0, 0.1);
+  clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  outline: none;
+}
+
+header #toggle:checked ~.navbar{
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+header .navbar a{
+margin: 1.5rem;
+padding: 1.5rem;
+background-color: #fff;
+border: .1rem solid rgba(0, 0, 0, 0.1);
+display: block;
+outline: none;
+}
+.icons-container .icons h3{
+        font-size: 2rem;
+
+    }
+    
+    .icons-container .icons span{
+        font-size: 1.7rem;
+    }
+
+
+@media(max-width: 450px) {
+  html{
+    font-size: 45%;
+}
+h3{
+  font-size: 1.7rem;
+  padding: 3px;
+  text-align: center;
+    width: 100%;
+}
+
+.heading{
+  font-size: 2rem;
+
+}
+
+
+}

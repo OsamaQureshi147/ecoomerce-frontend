@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<title>E-commerce website</title>
+	<link rel="stylesheet" type="text/css" href="e-commerce.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=BhuTuka+Expanded+One&family=Combo&family=Nunito+Sans:wght@300;900&family=Poppins:wght@100&family=Source+Serif+Pro:ital,wght@0,200;1,200&family=Syne&display=swap" rel="stylesheet">
+	<!-- Link Swiper's CSS -->
+<link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+
+</head>
+<body>
+
+<div class="upperline">
+<h3><span>ENJOY UPTO $75 </span>  ON SELECT PRODUCTS</h3>
+</div>
+
+<header>
+<input type="checkbox" name="" id="toggle">
+<label for="toggle" class="fa fa-bars"></label>
+
+<a href="" class="logo"><img src="pic/green.png">M̶ A<span>Đ</span>RA</a>
+<nav class="navbar">
+<a href="http://localhost/ecoomerce/skin.php" class="active" style="color: #088178;">Home</a>
+<a href="shop.html">Shop</a>
+<a href="ourstory.html">About</a>
+<a href="http://localhost/ecoomerce/contact.php">Contact</a>
+</nav>
+
+
+<div class="icon">
+<a href="http://localhost/ecoomerce/login.php" class="fa fa-user-o"></a>
+<a href="http://localhost/ecoomerce/shoppingcart.html" target="_blank" class=" fa fa-shopping-cart"></a>
+
+</div>
+
+
+</header>
+
+<script>
+
+window.addEventListener("scroll", function(){
+  var header= document.querySelector("header");
+  header.classList.toggle("sticky", window.scrollY > 0);
+})
+
+//var navbar=document.getElementsById("navbar");
+//var menu=document.getElementsById("menu");
+
+//window.onscroll= function(){
+	//if (window.pageYOffset >= menu.offsetTop) {
+//navbar.classList.add("sticky");
+//}
+//else{
+	//navbar.classList.remove("sticky");
+//}
+//}
+</script>
+
+<div class="pic">
+
+<div class="w3-content w3-section" style="width:100%; height: 600px; ">
+  <img class="mySlides" src="pic/or.jpg" style="width:100%; height: 600px;">
+  <img class="mySlides" src="pic/madara.jpg" style="width:100%; height: 600px;">
+   <img class="mySlides" src="pic/deep.jpg" style="width:100%; height: 600px;">
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+
+
+<section id="feature"  class="section-p1">
+        <div class="icons">
+        <img src="pic/icon-1.png" alt="">
+        <h6>free delivery </h6>
+        </div>
+
+         <div class="icons">
+        <img src="pic/icon-3.png" alt="">
+            <h6>offer & gifts </h6>
+    </div>
+        
+          <div class="icons">
+        <img src="pic/icon-2.png" alt="">
+            <h6>moneyback guarantee</h6>
+        </div>
+   
+<div class="icons">
+        <img src="pic/organic.png" alt="">
+            <h6>Orignality</h6>
+    </div>
+
+    <div class="icons">
+        <img src="pic/ms.png" alt="">
+            <h6>Track Orders</h6>
+    </div>
+
+    <div class="icons">
+        <img src="pic/icon-4.png" alt="">
+            <h6>secure payment </h6>
+    </div>
+
+   
+</section>
+
+    
+<!--card start-->
+
+<section class="products" id="products">
+<h1> Britain's Most Positively Reviewed Organic Skin Care Store
+</h1>
+<h3>Founded in 2004, our clean beauty edit is powered by nature and guided by science to represent the world's best <br>and most effective natural beauty brands. With over 17,000 authenticated five star reviews you know you're <br>onto something good.</h3>
+    <h2> TOP  SELLERS </h2>
+
+<div class="swiper product-slider">
+    <div class="swiper-wrapper">
+         
+            <div class="swiper-slide box" >
+                <img src="pic/maa.jpg" alt="" onclick="window.location.href='cosmic.html';">
+                <div class="label">NEW</div>
+                <h3>Cosmic Drop Highlighter </h3>
+                <div class="price"> 3000/- </div>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-alt"></i>
+                </div>
+                <a href="#"  class="btn">add to cart</a>
+    
+            </div>
+
+            <div class="swiper-slide box" >
+                <img src="pic/m.jpg" alt="" onclick="window.location.href='grow.html';">
+                <h3>Grow Volume Shampoo</h3>
+                <div class="price"> 1999/- </div>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="pic/ma2.jpg" alt=""  onclick="window.location.href='peel.html';">
+                <h3>Juicy Peeling Mask</h3>
+                <div class="price"> 1000/- </div>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                </div>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+
+            <div class="swiper-slide box" >
+                <img src="pic/ma5.jpg" alt="" onclick="window.location.href='repair.html';">
+                <h3>Nourish & Repair Condition</h3>
+                <div class="price"> 2400/- </div>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+
+   
+
+            <div class="swiper-slide box" >
+                <img src="pic/maa.jpg" alt="" onclick="window.location.href='cream.html';">
+                 <div class="label stock">No stock</div>
+                <h3>Time Miracle Cream</h3>
+                <div class="price"> 1199/- </div>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+
+            <div class="swiper-slide box" >
+                <img src="pic/maa7.jpg" alt="" onclick="window.location.href='derma.html';">
+                <div class="label sale">sale</div>
+                <h3>Derma Collage Night Cream</h3>
+                <div class="price"> 5099<span>3000</span> </div>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                </div>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+
+            <div class="swiper-slide box" >
+                <img src="pic/maa6.jpg" alt="" onclick="window.location.href='time.html';">
+                <div class="label stock">No stock</div>
+                <h3>Time Miracle Serum</h3>
+                <div class="price"> 4300/- </div>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+
+            <div class="swiper-slide box" >
+                <img src="pic/maaa.jpg" alt="" onclick="window.location.href='hydra.html';">
+                <div class="label sale">sale</div>
+                <h3>Time Miracle Hydra Firm</h3>
+                <div class="price">  1699/-<span>1930</span> </div>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                </div>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+
+        </div>
+
+    </div>
+
+
+</section>
+
+
+
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+<script type="text/javascript">
+var swiper = new Swiper(".product-slider", {
+    loop:true,
+    spaceBetween: 20,
+    autoplay: {
+        delay: 7500,
+        disableOnInteraction: false,
+    },
+    centeredSlides: true,
+    breakpoints: {
+      0: {
+        slidesPerView: 1,
+      },
+      768: {
+        slidesPerView: 2,
+      },
+      1020: {
+        slidesPerView: 3,
+      },
+    },
+});
+</script>
+<!-- header section ends -->
+
+<section id="banner" class="section-ml" class="back">
+<h4>Repaire services</h4>
+<h2>UP TO <span>70% OFF</span>- ALL SkinCare Products</h2>
+<button >Explore More</button>  
+
+
+
+</section>
+
+<section class="arrival" id="arrival">
+<h1> NEW ARRIVALS </h1>
+<p>Summer Collection</p>
+
+
+    <div class="card" >
+    <div class="card-pic"onclick="window.location.href='facial.html';">
+  <img src="pic/skil.jpg" >
+</div>
+<div class="des">
+  <h2>Facial Products</h2>
+  <p class="price">$45.99</p>
+  <button>Add-cart</button>
+</div>
+</div>
+
+  <div class="card">
+    <div class="card-pic">
+  <img src="pic/soss.jpg" >
+</div>
+<div class="des">
+  <h2>Night mircale cream</h2>
+  <p class="price">$19.99</p>
+  <button>Add-cart</button>
+</div>
+</div>
+ <div class="card">
+    <div class="card-pic">
+  <img src="pic/lip.jpg" >
+</div>
+<div class="des">
+  <h2>Lip Balm</h2>
+  <p class="price">$19.99</p>
+  <button>Add-cart</button>
+</div>
+</div>
+ <div class="card">
+    <div class="card-pic">
+  <img src="pic/mad9.jpg" >
+</div>
+<div class="des">
+  <h2>Whitening cream</h2>
+  <p class="price">$19.99</p>
+  <button>Add-cart</button>
+</div>
+</div>
+
+ <div class="card">
+    <div class="card-pic">
+  <img src="pic/ws.jpg" >
+</div>
+<div class="des">
+  <h2>Facelift Cream</h2>
+  <p class="price">$31.99</p>
+<button>Add-cart</button>
+</div>
+</div>
+
+ <div class="card">
+    <div class="card-pic">
+  <img src="pic/v.jpg" >
+</div>
+<div class="des">
+  <h2>Ultra Rich Balm</h2>
+  <p class="price">$21.99</p>
+  <button>Add-cart</button>
+</div>
+</div>
+
+ <div class="card">
+    <div class="card-pic">
+  <img src="pic/ghs.jpg" >
+</div>
+<div class="des">
+  <h2>moisturiser cream</h2>
+  <p class="price">$23.99</p>
+  <button>Add-cart</button>
+</div>
+</div>
+
+ <div class="card">
+    <div class="card-pic">
+  <img src="pic/st.jpg" >
+</div>
+<div class="des">
+  <h2>Fragnance Face Balm</h2>
+  <p class="price">$15.99</p>
+  <button>Add-cart</button>
+</div>
+</div>
+       
+</section>
+   
+<section id="sm-banner" class="section-p1">
+<div class="banner-box">
+ <h4>Crazy Deals</h4>
+ <h2>buy 1 get 1 free</h2>
+ <h4>The best organic cream is on sale at <span>MADARA</span></h4>
+ <button class="white">Learn More</button>   
+
+</div>
+
+<div class="banner-box banner-box2">
+ <h4>For Winter</h4>
+ <h2>Upcoming season</h2>
+<h4>The best organic cream is on sale at<span> MADARA</span></h4>
+ <button class="white">Collection</button>   
+
+</div>
+</section>
+            
+<section id="banner3">
+  <div class="banner-box ">
+ 
+ <h2>Daily Routine Care</h2>
+ <h3>winter collection -50% OFF</h3>
+  
+  </div>
+
+  <div class="banner-box banner-box2">
+ 
+ <h2>Seasonal Sale</h2>
+ <h3>winter collection -50% OFF</h3>
+</div>
+
+  <div class="banner-box banner-box3">
+ 
+ <h2>Oily Skincare </h2>
+ <h3>Summer collection -50% OFF</h3>
+</div>
+</section>
+
+
+  <section id="news" class="section-p1 section-ml">
+      <div class="news-text">
+        <h4>Signup for newsletters</h4>
+   <p> Get E-mail update about our product and <span>special offers.</span></p>           
+  </div> 
+  <?php
+
+include 'config.php';
+error_reporting(0);
+
+if (isset($_POST['submit'])){
+
+$email=$_POST['email'];
+
+//echo  $email;
+
+}
+
+$res= mysqli_query($conn,"insert into user(email)values('$email')");
+
+//if ($res){
+//  echo 'enter';
+//}
+//else{
+    //echo 'invalid';
+//}
+
+?> 
+    <form  action=""   method="POST">
+    <div class="form">
+        <input type="email" name="email" placeholder="   Email  ID ">
+        <button name="submit" type="submit" value="submit">Sign up</button>
+        </form>
+    </div>
+    
+  </section>
+
+<footer class="section-p1">
+<div class="col">
+<h2><img src="pic/green.png">MA<span>D</span>RA</h2>
+<h4>Contact</h4>
+<p><strong>Address:</strong> 562 welligton Road, 32 street, San Fransico</p> 
+<p><strong>Phone:</strong> 011 222 612/(+01)01 2334 1567</p> 
+<p><strong>Hours:</strong> 10:00-18:00, Mon-Sat</p> 
+<div class="Follow">
+<h4>Follow us</h4>
+<div class="links">
+ <a href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a> 
+ <a href=""> <i class="fa fa-facebook" aria-hidden="true"></i></a> </a> 
+  <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a> 
+<a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a> 
+
+</div>
+    
+</div>
+</div>
+<div class="col">
+<h4>About</h4> 
+<a href="file:///C:/Users/Anam.DESKTOP-2T2RI4O/Desktop/our%20story.html">About us</a>
+<a href="file:///D:/xampp/htdocs/ecoomerce/e-commerce-website.html#">Home</a>
+<a href="http://localhost/ecoomerce/shop.html">Shop</a>
+<a href="http://localhost/ecoomerce/contact.php">Contact us</a>
+</div>
+
+<div class="col">
+<h4>My Account</h4> 
+<a href="http://localhost/ecoomerce/register.php">Sign In</a>
+<a href="http://localhost/ecoomerce/shoppingcart.php">View Cart</a>
+<a href="http://localhost/ecoomerce/login.php">Login</a>
+<a href="">Help</a>
+
+</div>
+
+<div class="col install">
+<h4>Install App</h4> 
+<p>From App Store or Google App </p>
+<div class="row">
+<img src="pic/app.jpg">
+<img src="pic/play.jpg">
+</div>
+<div class="gate">
+<p>Secured Payment Gateway</p>
+<img src="pic/pay.png">
+</div>
+</div>
+<div class="copy-right">
+<p>@2022,Mk  etc-HTML CSS JAVASCRIPT Ecommerce Template</p>
+</div>
+</footer>
+
+
+
+</body>
+</html>
+<script type="text/javascript" src="js/main.js"></script>

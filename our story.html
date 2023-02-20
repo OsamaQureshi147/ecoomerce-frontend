@@ -1,0 +1,889 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title></title>
+  <link rel="stylesheet" href="">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style type="text/css">
+    
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    text-decoration: none;
+    transition: .2s linear;
+}
+html{
+  overflow-x: hidden;
+  font-size: 55%;
+  scroll-behavior: smooth;
+  scroll-margin-top: 6rem;
+    background-color: #eee;
+}
+
+.upperline span{
+ color: #ef3636;
+ font-weight: bold;
+ font-size: 1.9rem;
+ } 
+.upperline{
+background-color: #088178;
+height: 40px;
+width: 100%;
+padding: 10px 3px;
+}
+.upperline h3{
+color: white;
+font-size: 1.7rem;
+text-align: center;
+font-family:  sans-serif;
+font-weight: 700;
+
+}
+
+header{
+
+ position: fixed;
+    left:0; right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:1rem 5%;
+    background:#fff;
+     box-shadow:0 5px 15px rgba(0, 0, 0, 0.3);
+}
+header .logo{
+font-weight: bold;
+font-size: 3rem;
+color:black;
+
+}
+
+header .logo img{
+  height: 25px;
+}
+header .logo span{
+  color: #088178;
+  font-size: 3rem;
+}
+
+header .navbar a{
+ font-weight: bold;
+color: black;
+font-size: 2.2rem;
+margin: 2rem;
+
+}
+
+header .icon  a{
+  height: 4.5rem;
+    width: 4.5rem;
+    line-height: 4.5rem;
+    border-radius: .5rem;
+    background: #eee;
+    color:black;
+    font-size: 2.5rem;
+    margin-left: .3rem;
+    cursor: pointer;
+    text-align: center;
+
+ 
+}
+header .active{
+    border-bottom: 1px solid #088187;
+    
+}
+header #toggle{
+  display: none;
+}
+
+header .fa-bars {
+  font-size: 3rem;
+  color: #333;
+  border-radius: .5rem;
+  padding: 1rem 1.5rem;
+  cursor: pointer;
+  border:.2rem solid rgba(0, 0, 0, .3) ;
+    display: none;
+}
+header .icon a:hover{
+transition: .4s;
+color: #088178;
+font-weight: bold;
+}
+
+  .sticky{
+  
+  position: fixed;
+  top: 0;
+  width: 100%;
+  
+}
+ header .navbar a:hover{
+transition: .1s;
+color: #088178;
+border-bottom:2px solid #088178;
+font-weight: bold;
+}
+
+
+ 
+
+.back-video{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9));
+   filter: blur(6px);
+  -webkit-filter: blur(6px);
+    filter: grayscale(100%);
+}
+
+.main3{
+
+height: 800px;
+width: 100%;
+
+}
+.intro {
+width: 50%;
+height: 290px;
+margin-top: 50px;
+font-size: 17px;
+float: right;
+font-family: 'Poppins', sans-serif;
+text-justify: inter-word;
+text-align: justify;
+margin-right: 40px;
+color: black;
+letter-spacing: 1px;
+line-height: 24px;
+font-weight: 500;
+
+
+}
+
+.intro:hover{
+  text-shadow: 0 0 1px #95bb72;
+}
+.nature h2{
+letter-spacing: 1px;
+font-size: 30px;
+font-weight: bold;
+color: black;
+margin-top: 10px;
+margin-left: 20px;
+width: 40%;
+}
+.nature h2 span{
+  color: green;
+}
+.nature1 img{
+
+height: 500px;
+width: 45%;
+margin-right: 20px;
+float: right;
+margin-top: 350px;
+}
+ .nature2 img{
+
+height: 850px;
+width: 40%;
+margin-left: 20px;
+
+
+}
+
+.nature1 img:hover {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+.nature2 img:hover {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
+.jungle p{
+float: left;
+width: 40%;
+height: 250px;
+font-size: 17px;
+text-justify: inter-word;
+text-align: justify;
+font-family: 'Poppins', sans-serif;
+margin-top:50px;
+margin-left: 10px;
+font-weight: 500;
+line-height:28px ;
+
+}
+
+.jungle p:hover{
+  text-shadow: 0 0 1px #088178;
+}
+
+.nature {
+  width: 80%;
+  height: 100px;
+  margin-top: 100px;
+   position: relative;
+ 
+}
+.zero{
+  height: auto;
+  width: 100%;
+  filter: grayscale(100%);
+  margin-top: 50px;
+}
+
+.touch p {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-justify: inter-word;
+text-align: justify;
+font-family: 'Poppins', sans-serif;
+  font-size: 40px;
+  width: 50%;
+  color: white;
+
+
+}
+.owner  p{
+  position: absolute;
+  top: 255%;
+  left: 80%;
+  transform: translate(-50%, -50%);
+  color: black;
+font-family:  'Poppins', sans-serif;
+  font-size: 20px;
+  width: 30%;
+  font-weight: bold;
+  
+
+}
+.mic img{ 
+height: 280px;
+margin-right: 40px;
+float: right;
+width:50%;  
+margin-left: 50px;
+}
+.mics{
+
+height: 280px;
+  width:50%;
+}
+.mics img{
+margin-left: 640px;
+  width:100%;
+  height: 280px; 
+ margin-top: 50px;
+
+}
+.mic img:hover{
+-ms-transform: scale(1.1); /* IE 9 */
+  -webkit-transform: scale(1.1); /* Safari 3-8 */
+  transform: scale(1.1);
+}
+.mics img:hover{
+-ms-transform: scale(1.1); /* IE 9 */
+  -webkit-transform: scale(1.1); /* Safari 3-8 */
+  transform: scale(1.1);
+}
+.col  img{
+  height: 20px;
+}
+footer{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+width: 100%;
+}
+footer .col{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+margin-bottom: 20px;
+
+}
+footer h2{
+    margin-bottom: 30px;
+    font-size: 19px;
+    margin-top: 40px;
+}
+
+footer h2 span{
+color: #088178;
+}
+footer h4{
+    font-size: 15px;
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+footer p{
+    font-size: 13px;
+   margin: 0 0 8px 0;
+   color: #666;
+}
+
+footer a{
+    color: #666;
+    font-size: 14px;
+   margin: 0 0 8px 0;
+   text-decoration: none;
+   margin-bottom: 10px;
+   
+margin-left: 20px;
+}
+
+footer .Follow{
+    margin-top: 20px;
+   
+    font-size: 17px;
+}
+
+
+footer .Follow .links{
+    color: #465b52;
+    padding-right: 4px;
+    cursor: pointer;
+    font-size: 19px;
+    font-weight: bold;
+    margin-left: 25px;
+}
+
+footer .gate img{
+height: 30px;
+
+}
+footer .gate p{
+margin-top: 15px;
+}
+footer .install .row img{
+    border: 1px solid #088178;
+    border-radius: 4px;
+    height: 40px;
+    width: 40%;
+    margin: 5px;
+
+}
+
+footer .install img{
+    margin: 10px 0 15px 0;
+}
+footer .links:hover{
+color: #088178;
+}
+footer .copy-right{
+    width: 100%;
+    text-align: center;
+    color: #666;
+}
+footer  a:hover{
+color: #088178;
+}
+
+.hero{
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(12, 3, 51, 0.3),rgba(12, 3, 51, 0.3));
+position: relative;
+padding: 0 5%;
+display: flex;
+align-content: center;
+justify-content: center;
+
+}
+
+.back-video{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+
+}
+@media(min-aspect-ratio: 16/9){
+  .back-video{
+  width: 100%;
+  height: auto;
+
+
+}
+}
+
+@media(max-aspect-ratio: 16/9){
+  .back-video{
+  width: auto;
+  height: 100%;
+}
+}
+@media(max-width: 1200px){
+ html{
+    font-size: 45%;
+  }
+  .hero {
+    width: 100vw;
+    height: 100vh;
+  display: block;
+    
+}
+  .jungle p {
+margin: 10px 0px 0px 10px;
+height: 200px;
+font-size: 17px;
+}
+
+.mic img {
+ height: 200px;
+width: 45%;
+margin: 40px 10px 0px 0px;
+
+}
+.mics img {
+  height: 200px;
+width: 100%;
+margin: 40px 0px 0px 0px;
+}
+.intro {
+    width: 50%;
+    height: 230px;
+    font-size: 14px;
+}
+.nature h2 {
+    font-size: 25px;
+}
+
+.nature1 img {
+    margin-top: 100px;
+margin-left: 100px;
+    width: 45%;
+height: 400px;
+}
+.nature2 img {
+    height: 400px;
+    width: 37%;
+margin-top: 150px;
+}
+.owner  p {
+    position: absolute;
+    top: 245%;
+    left: 80%;
+    font-size: 15px;
+}
+.touch p{
+  font-size: 22px;
+} 
+.jungle p {
+   
+    height: 100px;
+    font-size: 15px;
+    width: 40%;
+ 
+}
+}
+@media(max-width: 900px)  {
+  html{
+    font-size: 45%;
+  }
+  .jungle p {
+margin: 10px 0px 0px 10px;
+height: 200px;
+font-size: 14px;
+}
+
+.mic img {
+ height: 200px;
+width: 45%;
+margin: 120px 0px 0px 0px;
+
+}
+.mics img {
+  height: 200px;
+width: 100%;
+margin: 10px 0px 0px 0px;
+}
+.intro {
+    width: 47%;
+    height: 230px;
+    font-size: 14px;
+}
+.nature h2 {
+    font-size: 25px;
+}
+
+.nature1 img {
+    margin-top: 100px;
+margin-left: 100px;
+    width: 45%;
+height: 400px;
+}
+.nature2 img {
+    height: 400px;
+    width: 37%;
+margin-top: 150px;
+}
+.owner  p {
+    position: absolute;
+    top: 245%;
+    left: 80%;
+    font-size: 15px;
+}
+.touch p{
+  font-size: 22px;
+}
+}
+@media (max-width: 800px) {
+  .mic img {
+    height: 200px;
+    width: 45%;
+    margin: 60px 0px 0px 0px;
+}
+.mics img {
+    height: 200px;
+    width: 100%;
+    margin: 70px 0px 0px 0px;
+}
+.nature1 img {
+    margin-top: 30px;
+    margin-left: 100px;
+    width: 40%;
+    height: 400px;
+}
+.intro {
+    width: 45%;
+    height: 200px;
+    font-size: 12px;
+}
+.owner  p {
+    position: absolute;
+    top: 265%;
+    left: 80%;
+}
+.nature2 img {
+    height: 400px;
+    width: 37%;
+   margin-top: 200px;
+}
+.jungle p {
+   
+    height: 100px;
+    font-size: 13px;
+    width: 45%;
+   margin-top: 80px;
+}
+}
+@media (max-width: 787px) {
+  .mic img {
+    height: 200px;
+    width: 45%;
+    margin: 80px 0px 0px 0px;
+}
+.mics img {
+    height: 200px;
+    width: 100%;
+    margin: 70px 0px 0px 0px;
+}
+.nature1 img {
+    margin-top: 50px;
+    margin-left: 10px;
+    width: 100%;
+    height: 400px;
+}
+.intro {
+    width: 50%;
+    height: 150px;
+    font-size: 12px;
+}
+.jungle p {
+   
+    height: 100px;
+    font-size: 13px;
+    width: 70%;
+    margin-top: 100px;
+    margin-left: 30px;
+}
+.nature h2 {
+font-size: 24px;
+    width: 45%;
+}
+.owner  p {
+    position: absolute;
+    top: 295%;
+    left: 49%;
+    font-size: 14px;
+}
+.nature2 img {
+    height: 200px;
+    width: 100%;
+margin: 20px 0px 0px 0px;
+}
+.back{
+  height: 70vh;
+}
+.zero{
+  margin: 20px 0px 0px 0px;
+}
+
+.touch p{
+  font-size: 17px;
+  width: 75%;
+}
+}
+@media(max-width:779px) {
+
+
+header .fa-bars{
+display: block;
+}
+header .navbar{
+  position: absolute;
+  top: 90%;left: 0;right: 0;
+  background-color: #eee;
+  border-top: .1rem solid rgba(0, 0, 0, 0.1);
+  clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  outline: none;
+}
+
+header #toggle:checked ~.navbar{
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+header .navbar a{
+margin: 1.5rem;
+padding: 1.5rem;
+background-color: #fff;
+border: .1rem solid rgba(0, 0, 0, 0.1);
+display: block;
+outline: none;
+}
+.icons-container .icons h3{
+        font-size: 2rem;
+
+    }
+    
+    .icons-container .icons span{
+        font-size: 1.7rem;
+    }
+
+}
+@media(max-width: 633px) {
+  html{
+    font-size: 45%;
+}
+h3{
+padding: 3px;
+}
+.heading{
+  font-size: 2rem;
+
+}
+.mic img {
+    height: 200px;
+    width: 100%;
+    margin: 30px 0px 0px 0px;
+}
+.mics img {
+    height: 370px;
+    width: 60%;
+    margin: 10px 0px 10px 0px;
+}
+.nature1 img {
+    margin-top: 20px;
+    width: 60%;
+    height: 350px;
+}
+.intro {
+    width: 50%;
+    height: 150px;
+    font-size: 12px;
+ 
+}
+.jungle p {
+   
+    height: 100px;
+    font-size: 13px;
+    width: 90%;
+    margin-top: 50px;
+    margin-left: 30px;
+}
+.nature h2 {
+font-size: 20px;
+height: 100px;
+width: 70%;
+
+ }
+ .nature  {
+background-color: red;
+height: 100px;
+width: 100%;
+
+ }
+.owner  p {
+    position: absolute;
+    top: 285%;
+    left: 69%;
+    font-size: 12px;
+    font-weight: bold;
+}
+.nature2 img {
+    height: 200px;
+    width: 100%;
+margin: 20px 0px 0px 0px;
+}
+.back{
+  height: 70vh;
+}
+.zero{
+  margin: 20px 0px 0px 0px;
+}
+
+.touch p{
+  font-size: 17px;
+  width: 75%;
+}
+
+}
+  </style>
+</head>
+<body>
+  <div class="hero">
+    <video autoplay loop muted plays-inline class="back-video">
+      <source src="pic/skin.mp4" type="video/mp4">
+    </video>
+ 
+  <header>
+<input type="checkbox" name="" id="toggle">
+<label for="toggle" class="fa fa-bars"></label>
+
+<a href="" class="logo"><img src="pic/green.png">M̶ A<span>Đ</span>RA</a>
+<nav class="navbar">
+<a href="skin.html">Home</a>
+<a href="shop.html" class="active" style="color: #088178; border-bottom: 1.5px solid #088178;">Shop</a>
+<a href="our story.html">About</a>
+<a href="http://localhost/ecoomerce/contact.php">Contact</a>
+</nav>
+
+
+<div class="icon">
+<a href="http://localhost/ecoomerce/login.php"  class="fa fa-user"></a>
+<a href="cart.php"  class="fa fa-shopping-cart"></a>
+<a href="#"  class="fa fa-search" id= "search-btn"></a>
+</div>
+</div>
+
+ </div>
+<!--next-->
+
+ <div class="intro">
+<p>
+MÁDARA is the name of a unique Northern wild herb (Galium Verum) that only grows in a pure soil, free from pesticides and other chemicals. Picked as a symbol of all organic Northern ingredients used in brand's products, it is also a popular woman’s name in Latvia. Founded in 2006 and nestled along the Baltic Sea, AS MADARA Cosmetics is an organic cosmetics manufacturer, whose formulations are based on highly active natural ingredients, harvested in the meadows, lakes and forests of Baltic/Northern region. Both ingredients and final formulations are certified according to the international ECOCERT/Cosmos standard. 
+</p>
+</div>
+
+<div class="nature">
+<h2><em><span>Nature</span></em> is generous <span><em>source of beauty</em></span> ingredients.</h2>
+</div>
+<div class="jungle">
+<p>
+&#8220;From revitalizing birch water to omega-bursting berry seeds, aromatic herbs and even mushrooms. Using cutting-edge technology, we refine nature’s raw materials into biologically active substances, and work them into clean formulas that deliver proven results&#8220;</p> 
+ 
+ </div>
+
+<div class="mic">
+<img src="pic/ok.jpg"> 
+</div>
+<div class=" mics">
+<img src="pic/k.jpg"><!--this pic is about micro-->
+</div>
+
+<div class="nature1">
+<img src="pic/founder.jpg">
+
+</div>
+<div class="owner">
+<em><p>MEET THE OWNER</p></em>
+</div>
+<div class="nature2">
+ <img src="pic/girl.jpg">
+</div>
+
+<!--next-->
+
+<div class="zero">
+<video autoplay loop muted plays-inline class="back">
+      <source src="pic/gh.mp4" type="video/mp4">
+    </video>
+
+<div class="touch">
+<p><em>Your skin holds both the responsibility and marvelous ability to protect you against external stressors. It bears touches, kisses, cold, heat, and so much more</em></p>
+</div>
+</div>
+
+<footer class="section-p1">
+<div class="col">
+<h2><img src="pic/green.png">MA<span>D</span>RA</h2>
+<h4>Contact</h4>
+<p><strong>Address:</strong> 562 welligton Road, 32 street, San Fransico</p> 
+<p><strong>Phone:</strong> 011 222 612/(+01)01 2334 1567</p> 
+<p><strong>Hours:</strong> 10:00-18:00, Mon-Sat</p> 
+<div class="Follow">
+<h4>Follow us</h4>
+<div class="links">
+ <a href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a> 
+ <a href=""> <i class="fa fa-facebook" aria-hidden="true"></i></a> </a> 
+  <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a> 
+<a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a> 
+
+</div>
+    
+</div>
+</div>
+<div class="col">
+<h4>About</h4> 
+<a href="file:///C:/Users/Anam.DESKTOP-2T2RI4O/Desktop/our%20story.html">About us</a>
+<a href="file:///D:/xampp/htdocs/ecoomerce/e-commerce-website.html#">Home</a>
+<a href="http://localhost/ecoomerce/shop.html">Shop</a>
+<a href="http://localhost/ecoomerce/contact.php">Contact us</a>
+</div>
+
+<div class="col">
+<h4>My Account</h4> 
+<a href="http://localhost/ecoomerce/register.php">Sign In</a>
+<a href="http://localhost/ecoomerce/shoppingcart.php">View Cart</a>
+<a href="http://localhost/ecoomerce/login.php">Login</a>
+<a href="">Help</a>
+
+</div>
+
+<div class="col install">
+<h4>Install App</h4> 
+<p>From App Store or Google App </p>
+<div class="row">
+<img src="pic/app.jpg">
+<img src="pic/play.jpg">
+</div>
+<div class="gate">
+<p>Secured Payment Gateway</p>
+<img src="pic/pay.png">
+</div>
+</div>
+<div class="copy-right">
+<p>@2022,Mk  etc-HTML CSS JAVASCRIPT Ecommerce Template</p>
+</div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,197 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>cart </title>
+</script>
+	<link rel="stylesheet" href="cart.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=BhuTuka+Expanded+One&family=Combo&family=Nunito+Sans:wght@300;900&family=Poppins:wght@100&family=Source+Serif+Pro:ital,wght@0,200;1,200&family=Syne&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="upperline">
+<h3><span>ENJOY UPTO $75 </span>  ON SELECT PRODUCTS</h3>
+</div>
+
+<header>
+<input type="checkbox" name="" id="toggle">
+<label for="toggle" class="fa fa-bars"></label>
+
+<a href="" class="logo"><img src="pic/green.png">M̶ A<span>Đ</span>RA</a>
+<nav class="navbar">
+<a href="http://localhost/ecoomerce/skin.php"class="active" style="color: #088178; border-bottom: 1.5px solid #088178;">Home</a>
+<a href="file:///D:/xampp/htdocs/ecoomerce/our%20story.html" >Shop</a>
+<a href="file:///D:/xampp/htdocs/ecoomerce/our%20story.html">About</a>
+<a href="">Review</a>
+<a href="http://localhost/ecoomerce/contact.php">Contact</a>
+</nav>
+
+
+<div class="icon">
+<a href="http://localhost/ecoomerce/login.php"  class="fa fa-user"></a>
+<a href="cart.php"  class="fa fa-shopping-cart"></a>
+<a href="#"  class="fa fa-search" id= "search-btn"></a>
+</div>
+</header>
+<script>
+
+window.addEventListener("scroll", function(){
+  var header= document.querySelector("header");
+  header.classList.toggle("sticky", window.scrollY > 0);
+})
+</script>
+
+<!-- shopping cart-->
+<section id="container">
+<div class="small-container">
+
+<table>
+<tr>
+<th>Product</th>	
+<th>Quantity</th>	
+<th>Subtotal</th>	
+</tr>
+<tr>
+<td><div class="cart-info" >
+<img src="pic/cosmic1.jpg" class="item-img">
+<div>
+
+<p class="item-title">name</p>
+
+<small class="item-price">price</small>
+<br><br>
+<a href=""><i class="fa fa-trash" aria-hidden="true"></i></a>
+</div>
+</div></td>
+<td><input class="item-qty" type="number" value="0"></td>
+<td class="sub-total">$50.00</td>
+
+</tr>	
+
+<tr>
+<td><div class="cart-info">
+<img src="pic/peel3.jpg">
+<div>
+<p>Cosmic Drop Highlighter</p>
+<small>Price: $50.00</small>
+<br><br>
+<a href=""><i class="fa fa-trash" aria-hidden="true"></i></a>
+</div>
+</div></td>
+<td><input type="number" value="0"></td>
+<td>$50.00</td>
+
+</tr>	
+
+
+<tr>
+<td><div class="cart-info">
+<img src="pic/facelift2.jpg">
+<div>
+<p>Facelift Cream</p>
+<small>Price: $60.00</small>
+<br><br>
+<a href="" class="btn-danger"><i class="fa fa-trash" aria-hidden="true"></i></a> 
+</div>
+</div></td>
+<td><input type="number" value="0"></td>
+<td>$50.00</td>
+
+</tr>	
+</table>
+<div class="total-price">
+<table>
+<tr>
+<td>Subtotal</td>
+<td>$200.00</td>
+</tr>
+<tr>
+<td>Tax</td>
+<td>$35</td>
+</tr>
+<tr>
+<td>Total</td>
+<td class="grand-total">$235.00</td>
+</tr>
+</table>
+</div>	
+</div>
+<div class="btn" >
+<a href="login.php">Ready for Order</a>
+</div>
+</section>
+<script type="text/javascript">
+var removebtn = document.getElementByIdName('btn-danger');
+for(i= 0; i < removebtn.length ; i++){
+	removebtn[i].addEventListener('click',removebtns)
+}
+function removebtns(event){
+	var e = event.target;
+	var parents= e.parentElement.parentElement.remove()
+	//console.log(parents)
+}
+$(document).ready(function(){
+  $("button").click(function(){
+    $("td").remove(".btn-danger");
+  });
+});
+</script>
+<footer class="section-p1">
+<div class="col">
+<h2><img src="pic/green.png">MA<span>D</span>RA</h2>
+<h4>Contact</h4>
+<p><strong>Address:</strong> 562 welligton Road, 32 street, San Fransico</p> 
+<p><strong>Phone:</strong> 011 222 612/(+01)01 2334 1567</p> 
+<p><strong>Hours:</strong> 10:00-18:00, Mon-Sat</p> 
+<div class="Follow">
+<h4>Follow us</h4>
+<div class="links">
+  <i class="fa fa-linkedin" aria-hidden="true"></i>
+  <i class="fa fa-facebook" aria-hidden="true"></i>
+  <i class="fa fa-instagram" aria-hidden="true"></i>
+  <i class="fa fa-twitter" aria-hidden="true"></i>  
+
+</div>
+    
+</div>
+</div>
+<div class="col">
+<h4>About</h4> 
+<a href="">About us</a>
+<a href="">Delivery Information</a>
+<a href="">Privacy Policy</a>
+<a href="">Term & Conditions</a>
+<a href="">Contact us</a>
+</div>
+
+<div class="col">
+<h4>My Account</h4> 
+<a href="">Sign In</a>
+<a href="">View Cart</a>
+<a href="">Track My Order</a>
+<a href="">Help</a>
+
+</div>
+
+<div class="col install">
+<h4>Install App</h4> 
+<p>From App Store or Google App </p>
+<div class="row">
+<img src="pic/app.jpg">
+<img src="pic/play.jpg">
+</div>
+<div class="gate">
+<p>Secured Payment Gateway</p>
+<img src="pic/pay.png">
+</div>
+</div>
+<div class="copy-right">
+<p>@2022,Mk  etc-HTML CSS JAVASCRIPT Ecommerce Template</p>
+</div>
+</footer>
+
+</body>
+</html>
